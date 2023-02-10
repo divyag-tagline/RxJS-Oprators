@@ -1,0 +1,38 @@
+<div class="m-4 my-3">
+  <h2>to-array works!</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Array</strong>
+      <hr />
+      <div class="card w-50">
+        <div class="card-header justify-content-center d-flex">
+          toArray Operator
+        </div>
+        <div class="card-body">
+          <ul id="observArray"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <strong>Array of Object</strong>
+      <hr />
+      <div class="card w-50">
+        <div class="card-header justify-content-center d-flex">
+          toArray Operator
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <ng-container *ngFor="let user of usersDetails">
+            <tr>
+              <td>{{user.name}}</td>
+              <td>{{user.skill}}</td>
+            </tr>
+          </ng-container>
+          </table>
+          <ul id="observArray1"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
