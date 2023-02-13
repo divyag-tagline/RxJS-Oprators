@@ -39,6 +39,14 @@ export class ListComponent implements OnInit {
       name: 'Pluck',
       link:'pluck'
     },
+    {
+      name: 'Filter',
+      link:'filter'
+    },
+    {
+      name: 'Tap',
+      link:'tap'
+    },
   ];
 
   constructor() {}

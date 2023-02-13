@@ -1,0 +1,82 @@
+<div class="m-4 my-3">
+  <h2>Filter</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 01</strong>
+      <hr />
+      <p class="border rounded bg-light py-2 px-3">
+        <strong>Filter : </strong> Filter : By Length
+      </p>
+      <br />
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let detail of details">
+            <tr>
+              <td>{{ detail.id }}</td>
+              <td>{{ detail.name }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 02</strong>
+      <hr />
+      <p class="border rounded bg-light py-2 px-3">
+        <strong>Filter : </strong> Filter : By Gender
+      </p>
+      <br />
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let user of users">
+            <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.gender }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 03 </strong>
+      <hr />
+      <p class="border rounded bg-light py-2 px-3">
+        <strong>Filter </strong> Filter : By nth Items
+      </p>
+      <br />
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let user of allDetails">
+            <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.gender }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { from, interval, map, Subscription } from 'rxjs';
 import { CommonServiceService } from 'src/app/shared/service/common-service.service';
 
-interface Members {
+export interface Members {
   id: number;
   name: string;
+  gender?:string;
 }
 @Component({
   selector: 'app-map',

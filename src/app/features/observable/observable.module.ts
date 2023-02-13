@@ -10,7 +10,9 @@ import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomobservableComponent } from './customobservable/customobservable.component';
 import { MapComponent } from './map/map.component';
 import { PluckComponent } from './pluck/pluck.component';
-
+import { FilterComponent } from './filter/filter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TapComponent } from './tap/tap.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,15 @@ import { PluckComponent } from './pluck/pluck.component';
     ToArrayComponent,
     CustomobservableComponent,
     MapComponent,
-    PluckComponent
+    PluckComponent,
+    FilterComponent,
+    TapComponent,
   ],
   imports: [
     CommonModule,
-    ObservableRoutingModule
-  ]
+    ObservableRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
-export class ObservableModule { }
+export class ObservableModule {}

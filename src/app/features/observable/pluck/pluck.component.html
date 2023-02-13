@@ -1,4 +1,50 @@
 <div class="m-4 my-3">
-    <h2>Pluck</h2>
-    <br />
+  <h2>Pluck</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 01</strong>
+      <hr />
+      <p class="border rounded bg-light py-2 px-3">
+        <strong>Pluck : </strong> data => by Property
+      </p>
+      <br />
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let name of data">
+            <tr>
+              <td>{{name}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 02 </strong>
+      <hr />
+      <p class="border rounded bg-light py-2 px-3">
+        <strong>Pluck</strong> Pluck object data
+      </p>
+      <br />
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Job Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let title of titles">
+            <tr>
+              <td>{{title}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
