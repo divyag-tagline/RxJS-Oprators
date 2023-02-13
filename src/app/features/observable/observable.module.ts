@@ -40,6 +40,7 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    
   ],
 })
 export class ObservableModule {}

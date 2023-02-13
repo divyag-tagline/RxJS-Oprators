@@ -24,8 +24,8 @@
       </p>
       <hr />
       <p>Current Name: <strong >{{names}}</strong></p>
-      <span [ngClass]=" customStatus === 'completed' ? 'badge  p-2 bg-primary' : customStatus === 'error' ? 'badge  p-2 bg-danger' : 'badge  p-2 bg-primary'">
-        {{customStatus === 'completed' ? 'Success' : customStatus === 'error' ? 'Error' : 'Running'}}
+      <span [ngClass]=" nameStatus === 'completed' ? 'badge  p-2 bg-primary' : nameStatus === 'error' ? 'badge  p-2 bg-danger' : 'badge  p-2 bg-primary'">
+        {{nameStatus === 'completed' ? 'Success' : nameStatus === 'error' ? 'Error' : 'Running'}}
       </span>
     </div>
   </div>
