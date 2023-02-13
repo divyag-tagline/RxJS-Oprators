@@ -47,6 +47,18 @@ export class ListComponent implements OnInit {
       name: 'Tap',
       link:'tap'
     },
+    {
+      name: 'Take',
+      link:'take'
+    },
+    {
+      name: 'Retry',
+      link:'retry'
+    },
+    {
+      name: 'Debounce - Time',
+      link:'debounce'
+    },
   ];
 
   constructor() {}

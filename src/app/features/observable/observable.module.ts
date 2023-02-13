@@ -13,6 +13,10 @@ import { PluckComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TapComponent } from './tap/tap.component';
+import { TakeComponent } from './take/take.component';
+import { RetryComponent } from './retry/retry.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +30,16 @@ import { TapComponent } from './tap/tap.component';
     PluckComponent,
     FilterComponent,
     TapComponent,
+    TakeComponent,
+    RetryComponent,
+    DebounceTimeComponent,
   ],
   imports: [
     CommonModule,
     ObservableRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 })
 export class ObservableModule {}

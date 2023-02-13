@@ -8,6 +8,7 @@ import { CommonServiceService } from 'src/app/shared/service/common-service.serv
   styleUrls: ['./tap.component.scss'],
 })
 export class TapComponent implements OnInit {
+  myColor!:string;
   constructor(private commonService: CommonServiceService) {}
 
   ngOnInit(): void {
@@ -26,17 +27,18 @@ export class TapComponent implements OnInit {
       )
       .subscribe((res) => this.commonService.print(res, 'nameid'));
     //ex-02
-    const color = ['pink', 'grishma', 'kunjal','Parth','Tejas','Pihu','Vani'];
+    const color = ['pink', 'skyblue', 'green','red','grey','black'];
     let subscription1: Subscription;
-    subscription = source
+    subscription1 = source
       .pipe(
         tap((res) => {
-          if (res == 4) {
-           subscription.unsubscribe()
+          this.myColor = color[res];
+          if (res == 5) {
+           subscription1.unsubscribe()
           }
         }),
         map((data) => name[data])
       )
-      .subscribe((res) => this.commonService.print(res, 'nameid'));
+      .subscribe((res) => this.commonService.print(res, 'name'));
   }
 }

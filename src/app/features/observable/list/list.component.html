@@ -1,11 +1,30 @@
 <div class="row m-5">
   <div class="col-md-12">
+    <div class="dropdown w-100">
+      <a class="btn btn-secondary dropdown-toggle text-start w-100" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        Select RxJS Operator
+      </a>
+    
+      <ul class="dropdown-menu list dropdown-menu-end dropdown-menu-lg-start w-100" aria-labelledby="dropdownMenuLink">
+        <ng-container *ngFor="let header of headers">
+        <li><a class="dropdown-item" [routerLink]="header.link">{{ header.name }}</a></li>
+      </ng-container>
+        <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+      </ul>
+    </div>
+    <!-- <select class="form-select" aria-label="Default select example">
+      <option selected>Select RxJS Operator</option>
+      <option [routerLink]=""></option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
     <ul class="list">
       <ng-container *ngFor="let header of headers">
         <li>
           <a [routerLink]="header.link">{{ header.name }}</a>
         </li>
       </ng-container>
-    </ul>
+    </ul> -->
   </div>
 </div>

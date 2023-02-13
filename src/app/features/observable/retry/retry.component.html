@@ -1,0 +1,54 @@
+<div class="m-4 my-3">
+  <h2>
+    <strong>Retry</strong>
+  </h2>
+  <br />
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex - 01 </strong>
+      <hr />
+      <div class="card">
+        <div class="card-header">
+          <p class="border rounded bg-light py-2 px-3">
+            <strong>Details </strong>
+          </p>
+        </div>
+        <div class="card-body">
+          <br />
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container *ngFor="let user of details">
+                <tr>
+                  <td>{{ user.name }}</td>
+                  <td>{{ user.body }}</td>
+                  <td>{{ user.email }}</td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary" type="button" (click)="getDetails()">
+            <span
+              *ngIf="toggle"
+              class="spinner-border spinner-border-sm"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            {{ toggle ? "Getting Details..." : "Get Details" }}
+          </button>
+          <br/>
+          <p>Status: <strong [ngClass]="text?'text-success':'text-danger'">{{status}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
