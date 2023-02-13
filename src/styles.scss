@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+ul.techList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.techList li{
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 10px
+}
+
+ul.techList.error li{
+    color: red;
+    background: #ff00001f;
+    border-color: red;
+}
+
+ul.techList.complete li{
+    color: green;
+    background: #00800029;
+    border-color: green;
+}

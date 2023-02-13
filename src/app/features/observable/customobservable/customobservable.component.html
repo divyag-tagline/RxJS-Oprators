@@ -1,1 +1,32 @@
-<p>customobservable works!</p>
+<div class="m-4 my-3">
+  <h2>custom observable</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 01 (Manual)</strong>
+      <hr />
+      <ul class="techList" [ngClass]=" techStatus=== 'completed' ? 'complete' : techStatus === 'error' ? 'error' : ''" id="manobs"> 
+    </ul>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 02 (Custome Interval Observable)</strong>
+      <hr />
+      <ul class="techList" [ngClass]=" customStatus=== 'completed' ? 'complete' : customStatus === 'error' ? 'error' : ''"id="cusobs">
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 03 (Random Name)</strong>
+      <hr />
+      <p class="border rounded bg-light py-2 px-3">
+        <strong>Random Name: </strong> 'divya', 'grishma', 'kunjal', 'Tejas', 'Parth','Pihu'
+      </p>
+      <hr />
+      <p>Current Name: <strong >{{names}}</strong></p>
+      <span [ngClass]=" customStatus === 'completed' ? 'badge  p-2 bg-primary' : customStatus === 'error' ? 'badge  p-2 bg-danger' : 'badge  p-2 bg-primary'">
+        {{customStatus === 'completed' ? 'Success' : customStatus === 'error' ? 'Error' : 'Running'}}
+      </span>
+    </div>
+  </div>
+</div>
