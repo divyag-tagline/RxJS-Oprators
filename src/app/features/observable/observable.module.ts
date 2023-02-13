@@ -8,6 +8,8 @@ import { IntervalComponent } from './interval/interval.component';
 import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomobservableComponent } from './customobservable/customobservable.component';
+import { MapComponent } from './map/map.component';
+import { PluckComponent } from './pluck/pluck.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { CustomobservableComponent } from './customobservable/customobservable.c
     IntervalComponent,
     OfFromComponent,
     ToArrayComponent,
-    CustomobservableComponent
+    CustomobservableComponent,
+    MapComponent,
+    PluckComponent
   ],
   imports: [
     CommonModule,

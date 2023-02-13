@@ -4,8 +4,10 @@ import { CustomobservableComponent } from './customobservable/customobservable.c
 import { FromEventComponent } from './from-event/from-event.component';
 import { IntervalComponent } from './interval/interval.component';
 import { ListComponent } from './list/list.component';
+import { MapComponent } from './map/map.component';
 import { ObservableComponent } from './observable/observable.component';
 import { OfFromComponent } from './of-from/of-from.component';
+import { PluckComponent } from './pluck/pluck.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 
 const routes: Routes = [
@@ -36,7 +38,15 @@ const routes: Routes = [
       {
         path:'customeobservable',
         component:CustomobservableComponent
-      }
+      },
+      {
+        path:'map',
+        component:MapComponent
+      },
+      {
+        path:'pluck',
+        component:PluckComponent
+      },
     ],
   },
 ];

@@ -1,21 +1,11 @@
 <div class="row m-5">
-    <div class="col-md-12">
-        <ul class="list">
-            <li>
-                <a routerLink="fromevent">From Event</a>
-            </li>
-            <li>
-                <a routerLink="interval">Interval</a>
-            </li>
-            <li>
-                <a routerLink="offrom">Of From</a>
-            </li>
-            <li>
-                <a routerLink="toarray">toArray</a>
-            </li>
-            <li>
-                <a routerLink="customeobservable">Custome Observable</a>
-            </li>
-        </ul>
-    </div>
+  <div class="col-md-12">
+    <ul class="list">
+      <ng-container *ngFor="let header of headers">
+        <li>
+          <a [routerLink]="header.link">{{ header.name }}</a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
 </div>
