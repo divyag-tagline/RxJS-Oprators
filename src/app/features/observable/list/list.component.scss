@@ -47,6 +47,15 @@ ul.list li{
     margin: 10px;
 }
 
+.selects{
+    color: black;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 10px;
+}
+
 ul.list li:hover{
     color: skyblue;
     background: #00800029;
@@ -55,4 +64,14 @@ ul.list li:hover{
 
 ul.list li a{
     background-color: none;
+}
+
+.decoration{
+    text-decoration: none;
+    
+    color: gray;
+}
+ 
+li .decoration:hover{
+    color: black;
 }

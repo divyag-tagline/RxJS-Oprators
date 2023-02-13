@@ -1,13 +1,13 @@
 <div class="row m-5">
   <div class="col-md-12">
     <div class="dropdown w-100">
-      <a class="btn btn-secondary dropdown-toggle text-start w-100" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      <a class="btn btn-secondary dropdown-toggle selects text-start w-100" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
         Select RxJS Operator
       </a>
     
       <ul class="dropdown-menu list dropdown-menu-end dropdown-menu-lg-start w-100" aria-labelledby="dropdownMenuLink">
         <ng-container *ngFor="let header of headers">
-        <li><a class="dropdown-item" [routerLink]="header.link">{{ header.name }}</a></li>
+        <li><a class="decoration" [routerLink]="header.link">{{ header.name }}</a></li>
       </ng-container>
         <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
         <li><a class="dropdown-item" href="#">Something else here</a></li> -->
