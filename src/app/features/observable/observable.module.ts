@@ -24,6 +24,8 @@ import { SubjectComponent } from './subject/subject.component';
 import { SubjectModule } from '../subject/subject.module';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
     SubjectComponent,
     ReplaySubjectComponent,
     AsyncSubjectComponent,
+    ConcatMapComponent,
+    SwitchMapComponent,
   ],
   imports: [
     CommonModule,

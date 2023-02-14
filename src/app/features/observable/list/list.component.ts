@@ -83,6 +83,18 @@ export class ListComponent implements OnInit {
       name: 'Merge - Map',
       link:'mergemap'
     },
+    {
+      name: 'Concat - Map',
+      link:'concatmap'
+    },
+    {
+      name: 'Concat - Map',
+      link:'concatmap'
+    },
+    {
+      name: 'Switch - Map',
+      link:'switchmap'
+    },
   ];
 
   constructor() {}

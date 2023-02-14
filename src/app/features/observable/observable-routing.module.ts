@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { ConcatComponent } from './concat/concat.component';
 import { CustomobservableComponent } from './customobservable/customobservable.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
@@ -17,6 +18,7 @@ import { PluckComponent } from './pluck/pluck.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { RetryComponent } from './retry/retry.component';
 import { SubjectComponent } from './subject/subject.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { TakeComponent } from './take/take.component';
 import { TapComponent } from './tap/tap.component';
 import { ToArrayComponent } from './to-array/to-array.component';
@@ -101,6 +103,14 @@ const routes: Routes = [
       {
         path:'mergemap',
         component:MergeMapComponent
+      },
+      {
+        path:'concatmap',
+        component:ConcatMapComponent
+      },
+      {
+        path:'switchmap',
+        component:SwitchMapComponent
       },
     ],
   },
