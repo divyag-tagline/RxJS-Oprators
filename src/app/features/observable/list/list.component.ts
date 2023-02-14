@@ -59,6 +59,18 @@ export class ListComponent implements OnInit {
       name: 'Debounce - Time',
       link:'debounce'
     },
+    {
+      name: 'Concat',
+      link:'concat'
+    },
+    {
+      name: 'Merge',
+      link:'merge'
+    },
+    {
+      name: 'Merge - Map',
+      link:'mergemap'
+    },
   ];
 
   constructor() {}

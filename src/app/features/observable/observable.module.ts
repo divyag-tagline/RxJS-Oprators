@@ -17,6 +17,9 @@ import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
+import { ConcatComponent } from './concat/concat.component';
+import { MergeComponent } from './merge/merge.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
     TakeComponent,
     RetryComponent,
     DebounceTimeComponent,
+    ConcatComponent,
+    MergeComponent,
+    MergeMapComponent,
   ],
   imports: [
     CommonModule,

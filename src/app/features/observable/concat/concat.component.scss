@@ -1,0 +1,31 @@
+ul.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.list li{
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 10px;
+}
+
+.selects{
+    color: black;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 10px;
+}
+
+ul.list li:hover{
+    color: skyblue;
+    background: #00800029;
+    border-color: skyblue;
+}
+
+ul.list li a{
+    background-color: none;
+}
