@@ -13,7 +13,14 @@ const routes: Routes = [
     path: 'observable',
     loadChildren: () =>
       import('./features/observable/observable.module').then(
-        (promise) => promise.ObservableModule
+        (observable) => observable.ObservableModule
+      ),
+  },
+  {
+    path: 'subject',
+    loadChildren: () =>
+      import('./features/subject/subject.module').then(
+        (subject) => subject.SubjectModule
       ),
   },
   {

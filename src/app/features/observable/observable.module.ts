@@ -20,6 +20,10 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
+import { SubjectComponent } from './subject/subject.component';
+import { SubjectModule } from '../subject/subject.module';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,9 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
     ConcatComponent,
     MergeComponent,
     MergeMapComponent,
+    SubjectComponent,
+    ReplaySubjectComponent,
+    AsyncSubjectComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +53,7 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SubjectModule
     
   ],
 })

@@ -60,6 +60,18 @@ export class ListComponent implements OnInit {
       link:'debounce'
     },
     {
+      name: 'Subject',
+      link:'subject'
+    },
+    {
+      name: 'Replay - Subject',
+      link:'replaysubject'
+    },
+    {
+      name: 'Async - Subject',
+      link:'async'
+    },
+    {
       name: 'Concat',
       link:'concat'
     },

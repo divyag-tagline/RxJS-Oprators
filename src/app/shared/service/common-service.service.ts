@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CommonServiceService {
+  exclusive = new Subject<boolean>();
+  userName = new BehaviorSubject<string>('Divya');
+  videoEmit = new ReplaySubject<string>(3,5000);
 
-  constructor() { }
+  constructor() {}
 
-  print(counts: any,containerId:any) {
+  print(counts: any, containerId: any) {
     let el = document.createElement('li');
     el.innerText = counts;
     document.getElementById(containerId)?.append(el);

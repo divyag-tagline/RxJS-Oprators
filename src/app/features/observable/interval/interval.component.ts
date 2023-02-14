@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { interval, Subscription, timer } from 'rxjs';
 import { CommonServiceService } from 'src/app/shared/service/common-service.service';
 
@@ -7,7 +7,7 @@ import { CommonServiceService } from 'src/app/shared/service/common-service.serv
   templateUrl: './interval.component.html',
   styleUrls: ['./interval.component.scss'],
 })
-export class IntervalComponent implements OnInit {
+export class IntervalComponent implements OnInit,OnDestroy {
   obsMsg: any;
   videoSubscription!: Subscription;
   constructor(private commonService:CommonServiceService) {}
@@ -16,7 +16,6 @@ export class IntervalComponent implements OnInit {
     // const broadCastVideoes = interval(1000);
     const broadCastVideoes = timer(5000,1000);
     this.videoSubscription = broadCastVideoes.subscribe((res) => {
-      console.log('res :>> ', res);
       this.obsMsg = 'Video' + ' ' + res;
       this.commonService.print(this.obsMsg,'eleContiner');
       this.commonService.print(this.obsMsg,'eleContiner1');
@@ -25,5 +24,9 @@ export class IntervalComponent implements OnInit {
         this.videoSubscription.unsubscribe();
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.videoSubscription.unsubscribe()
   }
 }

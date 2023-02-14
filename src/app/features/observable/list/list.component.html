@@ -7,7 +7,7 @@
     
       <ul class="dropdown-menu list dropdown-menu-end dropdown-menu-lg-start w-100" aria-labelledby="dropdownMenuLink">
         <ng-container *ngFor="let header of headers">
-        <li><a class="decoration" [routerLink]="header.link">{{ header.name }}</a></li>
+        <li [routerLink]="header.link"><a class="decoration" >{{ header.name }}</a></li>
       </ng-container>
         <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
         <li><a class="dropdown-item" href="#">Something else here</a></li> -->

@@ -38,6 +38,7 @@ ul.list{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow-y: auto
 }
 ul.list li{
     background: #f8f8f8;
@@ -45,6 +46,11 @@ ul.list li{
     border-radius: 5px;
     padding: 7px 13px;
     margin: 10px;
+}
+
+.dropdown-menu {
+    max-height: 280px;
+    overflow-y: auto;
 }
 
 .selects{

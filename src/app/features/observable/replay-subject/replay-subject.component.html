@@ -1,0 +1,69 @@
+<div class="m-4 my-3">
+  <h2>
+    <strong>Replay Subject</strong>
+  </h2>
+  <br />
+  <hr />
+  <div class="row">
+    <div class="col-md-6" >
+      <h2>{{interValToggle ? 'Interval Video' : 'Add Videos'}}</h2>
+    </div>
+    <div class="col-md-6 justify-content-end d-flex"><button class="btn btn-warning text-right" (click)="toggleMethod()">Toggle Method</button></div>
+  </div>
+  <br />
+  <hr />
+  <div class="row justify-content-center" *ngIf="!interValToggle">
+    <div class="col-md-4">
+      <input type="text" class="form-control" #video />
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="addVideo(video)">
+        Add Video
+      </button>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <strong>User - 01</strong>
+      <hr />
+      <ul class="techList">
+        <ng-container *ngFor="let video of videoList">
+          <li><strong>Video</strong> : {{ video }}</li>
+        </ng-container>
+      </ul>
+    </div>
+    <div class="col-md-4">
+        <strong>User - 02</strong>
+        <hr />
+        <ul class="techList">
+          <ng-container *ngFor="let video of videoListA">
+            <li><strong>Video</strong> : {{ video }}</li>
+          </ng-container>
+        </ul>
+        <button
+          class=""
+          [ngClass]="subscribeModeUserA ? 'btn btn-danger' : 'btn btn-success'"
+          (click)="userASubscribe()"
+        >
+          {{ subscribeModeUserA ? "Unsubscribe Channel" : "Subscribe Channel" }}
+        </button>
+      </div>
+    <div class="col-md-4">
+      <strong>User - 03</strong>
+      <hr />
+      <ul class="techList">
+        <ng-container *ngFor="let video of videoListB">
+          <li><strong>Video</strong> : {{ video }}</li>
+        </ng-container>
+      </ul>
+      <button
+        class=""
+        [ngClass]="subscribeModeUserB ? 'btn btn-danger' : 'btn btn-success'"
+        (click)="userBSubscribe()"
+      >
+        {{ subscribeModeUserB ? "Unsubscribe Channel" : "Subscribe Channel" }}
+      </button>
+    </div>
+   
+  </div>
+</div>
