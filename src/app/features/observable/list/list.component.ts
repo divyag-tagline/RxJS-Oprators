@@ -95,6 +95,26 @@ export class ListComponent implements OnInit {
       name: 'Switch - Map',
       link:'switchmap'
     },
+    {
+      name: 'Exhaust - Map',
+      link:'exhaustmap'
+    },
+    {
+      name: 'Share - Replay',
+      link:'sharereplay'
+    },
+    {
+      name: 'CombineLatest - WithLatestFrom',
+      link:'combine'
+    },
+    {
+      name: 'Zip -ForkJoin',
+      link:'zip'
+    },
+    {
+      name: 'Catch - throw Error',
+      link:'catcherror'
+    },
   ];
 
   constructor() {}

@@ -15,7 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { ConcatComponent } from './concat/concat.component';
 import { MergeComponent } from './merge/merge.component';
@@ -26,6 +26,11 @@ import { ReplaySubjectComponent } from './replay-subject/replay-subject.componen
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
+import { ShareReplayComponent } from './share-replay/share-replay.component';
+import { CombineLatestComponent } from './combine-latest/combine-latest.component';
+import { ZipComponent } from './zip/zip.component';
+import { CatchthorwComponent } from './catchthorw/catchthorw.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +55,11 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
     AsyncSubjectComponent,
     ConcatMapComponent,
     SwitchMapComponent,
+    ExhaustMapComponent,
+    ShareReplayComponent,
+    CombineLatestComponent,
+    ZipComponent,
+    CatchthorwComponent,
   ],
   imports: [
     CommonModule,
@@ -58,7 +68,6 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
     ReactiveFormsModule,
     HttpClientModule,
     SubjectModule
-    
   ],
 })
 export class ObservableModule {}

@@ -1,0 +1,29 @@
+select.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    height:18%;
+    width: 50%;
+}
+select.list option{
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 10px;
+    padding-left: 2px;
+}
+
+
+
+// select.list option:hover{
+//     color: skyblue;
+//     background: #00800029;
+//     border-color: skyblue;
+// }
+
+// select.list option a{
+//     background-color: none;
+// }
+ 

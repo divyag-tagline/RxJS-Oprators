@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  config : 'https://my-json-server.typicode.com/Uxtrendz/apis/videoList',
+  baseURL : 'https://jsonplaceholder.typicode.com',
+  apiConfig: 'https://fakestoreapi.com/product',
+  api :'https://dummyjson.com/products123'
 };
 
 /*
